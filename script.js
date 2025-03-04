@@ -8,7 +8,7 @@ const words = [
     "brick", "trunk", "swore", "chase", "brace", "drape", "stark", "cabin", "flair", "flick",
     "sworn", "scout", "drain", "grasp", "pouch", "mirth", "close", "straw", "snout", "chime",
     "froze", "gleam", "spine", "quilt", "pluck", "wrack", "slant", "trove", "prank", "crash",
-    "kings", "latch", "vault", "brave", "slick", "draft", "faint", "wrist", "crisp", "jacal",
+    "kings", "latch", "vault", "brave", "slick", "draft", "faint", "wrist", "crisp", "jacks",
     "blink", "grasp", "quack", "plume", "sting", "throb", "swarm", "piano", "spout", "blunt"
 ];
 
