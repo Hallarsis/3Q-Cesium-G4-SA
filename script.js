@@ -3,12 +3,12 @@ const words = [
     "zebra", "mouse", "rings", "stone", "flame", "space", "sugar", "wheat", "light", "tiger",
     "ocean", "piano", "gravy", "block", "frost", "smile", "crown", "heart", "flute", "trace",
     "flock", "brisk", "glove", "charm", "shark", "vices", "twist", "crisp", "plain", "blaze",
-    "sting", "dough", "float", "storm", "crane", "broom", "daisy", "noble", "grand", "swift",
-    "fresh", "frown", "sweep", "torch", "scarf", "climb", "glaze", "shout", "draft", "pouch",
-    "brick", "trunk", "swoop", "chase", "brace", "drape", "stark", "cabin", "flair", "flick",
+    "sting", "dough", "float", "storm", "crane", "broke", "daisy", "noble", "grand", "swift",
+    "fresh", "frown", "swept", "torch", "scarf", "climb", "glaze", "shout", "draft", "pouch",
+    "brick", "trunk", "swore", "chase", "brace", "drape", "stark", "cabin", "flair", "flick",
     "sworn", "scout", "drain", "grasp", "pouch", "mirth", "close", "straw", "snout", "chime",
     "froze", "gleam", "spine", "quilt", "pluck", "wrack", "slant", "trove", "prank", "crash",
-    "kings", "latch", "vault", "brave", "slick", "draft", "faint", "wrist", "crisp", "jolly",
+    "kings", "latch", "vault", "brave", "slick", "draft", "faint", "wrist", "crisp", "jacal",
     "blink", "grasp", "quack", "plume", "sting", "throb", "swarm", "piano", "spout", "blunt"
 ];
 
