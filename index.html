@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Wordle </title>
+        <style>
+            h1 {
+                font-family: 'Palatino Linotype', serif;
+                left: -575px;
+                bottom: -30px;
+                position: relative;
+                font-size: 3em;
+                color: #9C7DC4;
+            }
+            body {
+                display: flex;
+                flex-direction: column;
+                background: linear-gradient(to bottom, #2E1A47, #3A2C7E, #9C7DC4, #E0E0E0);
+                align-items: center;
+                justify-content: center;
+                font-family: 'Palatino Linotype', serif;
+                margin: 0;
+                position: relative;
+            }
+            img {
+                animation: slideIn 0.5s forwards;
+            }
+            .pic1 {
+                position: absolute;
+                top: 35px; 
+                width: 100px; 
+                margin-right: 510px;
+                animation-delay: 0.1s;
+            }
+            .pic2 {
+                position: absolute;
+                top: 32px; 
+                width: 100px; 
+                margin-right: 250px;
+                animation-delay: 0.2s;
+            }
+            .pic3 {
+                position: absolute;
+                top: 32px; 
+                width: 80px; 
+                animation-delay: 0.3s;
+            }
+            .pic4 {
+                position: absolute;
+                top: 32px; 
+                width: 78px; 
+                margin-left: 250px;
+                animation-delay: 0.4s;
+            }
+            .pic5 {
+                position: absolute;
+                top: 35px; 
+                width: 100px; 
+                margin-left: 510px;
+                animation-delay: 0.5s;
+            }
+
+            @keyframes slideIn {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+            }
+            
+            .box {
+                display: flex;
+                justify-content: center;
+                gap: 30px;
+                margin-top: 20px;
+            }
+            .box > div {
+                width: 85px;
+                height: 85px;
+                border: 5px solid lightblue;
+                border-radius: 10px;
+                font-size: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                animation: slideIn 0.5s forwards;
+            }
+
+            .box > div:nth-child(1){
+                animation-delay: 0.1s;
+            }
+            .box > div:nth-child(2){
+                animation-delay: 0.2s;
+            }
+            .box > div:nth-child(3){
+                animation-delay: 0.3s;
+            }
+            .box > div:nth-child(4){
+                animation-delay: 0.4s;
+            }
+            .box > div:nth-child(5){
+                animation-delay: 0.5s;
+            }
+            
+            .answer:hover {
+              transform : scale(110%)
+            }
+            button {
+                width: 155px;
+                height: 40px;
+                display: block;
+                justify-content: center;
+                margin: auto;
+                margin-top: 30px;
+                margin-bottom: 30px;
+                bottom : -10px;
+                background-color: purple;
+                border-radius: 5px;
+                box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+                font-family: Arial, Helvetica, sans-serif;    
+                color: gray;      
+            }
+            button:hover {
+                background-color: #6BB9F0;
+                color: black;
+                transform: scale(110%);
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+                transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+            }
+
+            #correct {
+                background-color: green;
+                color: black;
+            }
+            #misplaced {
+                background-color: yellow;
+                color: black;
+            }
+            #nowhere {
+                background-color: gray;
+                color: black;
+            }
+        </style>
+        <script src="script.js"></script>
+    </head>
+    <body onload="GameStart()">
+
+        <img src="Emil.png" alt="Subaru" class="pic1" />
+        <img src="remr.png" alt="Subaru" class="pic2" />
+        <img src="suba.png" alt="Subaru" class="pic3" />
+        <img src="remb.png" alt="Subaru" class="pic4" />
+        <img src="Emil.png" alt="Subaru" class="pic5" />
+        <h1> ʀɛ-աօʀɖʟɛ </h1>
+       
+        
+        <div id="row1" class="box">
+            <div id="row1A"></div>
+            <div id="row1B"></div>
+            <div id="row1C"></div>
+            <div id="row1D"></div>
+            <div id="row1E"></div>
+        </div>
+        <div id="row2" class="box">
+            <div id="row2A"></div>
+            <div id="row2B"></div>
+            <div id="row2C"></div>
+            <div id="row2D"></div>
+            <div id="row2E"></div>
+        </div>
+        <div id="row3" class="box">
+            <div id="row3A"></div>
+            <div id="row3B"></div>
+            <div id="row3C"></div>
+            <div id="row3D"></div>
+            <div id="row3E"></div>
+        </div>
+        <div id="row4" class="box">
+            <div id="row4A"></div>
+            <div id="row4B"></div>
+            <div id="row4C"></div>
+            <div id="row4D"></div>
+            <div id="row4E"></div>
+        </div>
+        <div id="row5" class="box">
+            <div id="row5A"></div>
+            <div id="row5B"></div>
+            <div id="row5C"></div>
+            <div id="row5D"></div>
+            <div id="row5E"></div>
+        </div>
+            <button onclick="LetsSee()">Answer</button>
+    </body>
+</html>
